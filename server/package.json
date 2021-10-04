@@ -1,5 +1,5 @@
 {
-  "name": "authapp",
+  "name": "server",
   "version": "1.0.0",
   "description": "OAuth App",
   "main": "index.js",
