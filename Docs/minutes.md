@@ -1,5 +1,9 @@
 CSC302 Meeting Minutes
 
+Tuesday, October 5 7:00pm ET
+- Group decision to skip the weekly meeting in favour of a check in on Discord, seeing as there are no immediate action items until we get feedback from the A1 submission
+- Agreed to delegate specific roles to proceed with development of our prototype once the plan from A1 has been approved and scope questions clarified in weekly TA meeting on Thursday
+
 Monday, October 4 4:00pm ET
 - Initialized project repo https://github.com/zhaonancy/csc302-oauth
 - Completing A1
