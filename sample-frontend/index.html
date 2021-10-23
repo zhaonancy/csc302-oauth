@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="OAuth sample frontend page.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample Frontend</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <script src="scripts/main.js"></script>
-    </head>
-    <body>
-        <p>Sample frontend page goes here</p>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="OAuth sample frontend page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Frontend</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <img src="resources/background.jpg" id="background">
+    <div class="main">
+        <h1>Sample Frontend</h1>
+        <h2>created by The Dissidents</h2>
+        <div class="flex-container">
+            <img src="resources/avatar.png" id="avatar">
+            <a id="oauth" href="../server/frontend/login.html">
+                <img src="resources/lock.png" id="lock">
+                <p>Third-party login via <strong>OAuth</strong></p>
+            </a>
+        </div>
+    </div>
+</body>
+
 </html>

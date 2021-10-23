@@ -89,7 +89,7 @@ input[type="submit"]:hover {
 	padding: 20px;
 	position: absolute;
 	top: 10%;
-	left: 50%;
+	left: 48%;
 	transform: translateX(-50%);
 }
 
@@ -102,7 +102,7 @@ input[type="submit"]:hover {
 }
 
 .fadein {
-	-webkit-animation: fadein 1s;
+	animation: fadein 1s;
 }
 
 @keyframes fadein {
