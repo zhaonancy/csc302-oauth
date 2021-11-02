@@ -13,15 +13,19 @@
 
 <body>
     <img src="resources/background.jpg" id="background">
-    <div class="main">
-        <h1>Sample Frontend</h1>
+    <div class="dashboard">
+        <br><br><br>
+        <h1>Sample Dashboard</h1>
         <h2>created by <span style="color: #00C246;">The Dissidents</span></h2>
         <div class="flex-container">
-            <img src="resources/avatar.png" id="avatar">
-            <a id="oauth" href="../server/frontend/login.html">
-                <img src="resources/lock.png" id="lock">
-                <p>Third-party login via <strong>OAuth</strong></p>
-            </a>
+            <div class="item">
+                <h2>Login Success Rate</h2>
+                <img src="resources/piechart.png" id="piechart" class="item">
+            </div>
+            <div class="item">
+                <h2>Number of Logins</h2>
+                <img src="resources/bargraph.png" id="bargraph" class="item">
+            </div>
         </div>
     </div>
 </body>
