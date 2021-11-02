@@ -10,10 +10,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/login', (req, res) => {
-  res.send('Hello World!')
-})
-
 app.post('/login', (req, res) => {
   const username = req.body.username
   const password = req.body.password
@@ -26,8 +22,8 @@ app.post('/login', (req, res) => {
   }
 })
 
-app.get('/validate', (req, res) => {
-  res.send('Hello World!')
+app.get('/verify', (req, res) => {
+  res.status(200).send()
 })
 
 app.listen(port, () => {
