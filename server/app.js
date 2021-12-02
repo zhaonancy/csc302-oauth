@@ -55,7 +55,6 @@ app.post('/login', (req, res) => {
  * Verifies the presence of a submitted token in token storage
  */
 app.get('/validate/:potentialToken', (req, res) => {
-    console.debug('valid? ', TokenStorage.validate(req.params.potentialToken))
     if (TokenStorage.validate(req.params.potentialToken)) {
         res.json({'status': 'valid'})
     } else {
