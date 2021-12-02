@@ -1,6 +1,7 @@
 const { uuid } = require('uuidv4')
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const app = express()
 const TokenStorage = require('./tokens.js')
 const port = 3000
@@ -12,6 +13,10 @@ const Users = {
 
 // Use body-parser middleware to extract url encoded (i.e. form submission) data
 app.use(bodyParser.urlencoded({ extended: true }))
+
+// Use CORS middleware to enable requests from other domains (necessary for production, as requests to the /validte
+// endpoint originate from a different domain)
+app.use(cors())
 
 /**
  * Test that the server is alive and responding to requests
