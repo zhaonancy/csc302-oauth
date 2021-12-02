@@ -29,5 +29,25 @@
         </div>
     </div>
 </body>
-
+<script>
+    // Verify the supplied token
+    // Get client redirect url from the current URL
+    // Obviously this would be done on the backend in a real client application, this is just an illustration
+    // of the token authentication handshake
+	let params = new URLSearchParams(document.location.search)
+	let token = params.get('token')
+	if (token === null) {
+		console.error('No token sent, redirecting')
+        window.location.replace('https://oauth-client.lib.by')
+	} else {
+		fetch('http://oauth-server.lib.by/validate/' + token).then(response => response.json()).then(response => {
+            if (response.status == 'valid') {
+                console.log('Token valid')
+            } else {
+                console.error('Token invalid')
+                window.location.replace('https://oauth-client.lib.by')
+            }
+        })
+	}
+</script>
 </html>
