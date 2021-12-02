@@ -1,6 +1,6 @@
-const query = window.location.search;
-const params = new URLSearchParams(query);
-const token = params.get('token');
+const query = window.location.search
+const params = new URLSearchParams(query)
+const token = params.get('token')
 
 if (token === null) {
     console.error('No token sent, redirecting')
