@@ -1,3 +1,4 @@
+const path = require('path')
 const { uuid } = require('uuidv4')
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -17,6 +18,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // Use CORS middleware to enable requests from other domains (necessary for production, as requests to the /validte
 // endpoint originate from a different domain)
 app.use(cors())
+
+// Configure frontend directory to serve static content properly
+app.use(express.static(path.join(__dirname, 'frontend')))
 
 /**
  * Test that the server is alive and responding to requests
