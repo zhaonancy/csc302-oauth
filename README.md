@@ -21,6 +21,8 @@ Sample frontend (client) is deployed at [https://oauth-client.lib.by/](https://o
 
 Auth server is deployed at [https://oauth-server.lib.by/](https://oauth-server.lib.by/). See `server/README.md` for more detailed deployment information.
 
+![demo](/Docs/demo.gif)
+
 ## Directory Structure
 - `Docs`
   - `minutes.md` Meeting minutes

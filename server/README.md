@@ -8,7 +8,7 @@
 2. Install server dependencies in the root directory `server` with `npm install`
 3. Run the OAuth server app in the root directory `server` with `npm start`
     - This starts the server app on port 3000
-    - To run in development mode, use `npm dev`. This will automatically restart the server every time the code changes.
+    - To run in development mode, use `npm run dev`. This will automatically restart the server every time the code changes.
 
 ### Node Dependencies
 
@@ -23,7 +23,7 @@ Development dependencies:
 
 ## Testing
 
-Functionality of the following authentication server endpoints is covered by unit tests. To run them, run `npm test` after installing dependencies.
+Functionality of the following authentication server endpoints is covered by unit tests. To run them, run `npm run test` after installing dependencies.
 
 ## Server Routing
 
