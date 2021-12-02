@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="OAuth, created by The Dissidents">
@@ -9,10 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
 </head>
-
 <body>
 <div class="main">
-	<form id="login" action="success.html" method="post">
+	<form id="login" action="/login" method="post">
 		<h1>OAuth</h1>
 		<p align="right">created by <a href="https://github.com/zhaonancy/csc302-oauth">The Dissidents</a>&nbsp;</p>
 		<hr>
@@ -28,11 +26,21 @@
 			</tr>
 		</table>
 
+		<input type="hidden" name="clientRedirectUrl" id="client-redirect-url-input" value="" />
 		<input type="submit" value="Sign In">
 	</form>
 
 	<p align="center"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Need help signing in?</a></p>
 </div>
-
 </body>
+<script>
+	// Get client redirect url from the current URL
+	let params = new URLSearchParams(document.location.search)
+	let clientRedirectUrl = params.get('redirect')
+	if (clientRedirectUrl === null) {
+		console.error('No redirect URL specified')
+	} else {
+		document.querySelector('#client-redirect-url-input').value = clientRedirectUrl
+	}
+</script>
 </html>
