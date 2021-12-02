@@ -1,12 +1,17 @@
 const query = window.location.search;
 const params = new URLSearchParams(query);
-const token = params.get("token");
+const token = params.get('token');
 
-const verifyURL = "https://temp.url/verify?token=" + token;
-
-/*
-(async () => {
-    let response = await fetch(verifyURL)
-    response = await response.json()
-})();
-*/
+if (token === null) {
+    console.error('No token sent, redirecting')
+    window.location.replace('https://oauth-client.lib.by')
+} else {
+    fetch('http://oauth-server.lib.by/validate/' + token).then(response => response.json()).then(response => {
+        if (response.status == 'valid') {
+            console.log('Token valid')
+        } else {
+            console.error('Token invalid')
+            window.location.replace('https://oauth-client.lib.by')
+        }
+    })
+}
