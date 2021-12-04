@@ -25,16 +25,24 @@ Auth server is deployed at [https://oauth-server.lib.by/](https://oauth-server.l
 
 ## Directory Structure
 - `Docs`
-  - `minutes.md` Meeting minutes
   - `A1.md` Contains preliminary project development plan and milestones
   - `A2.md` Contains A1 postmortem, delegation of subtasks
-  - `flow.svg` Acceptance criteria flow chart
-- `sample-frontend` Sample frontend client that calls the Auth server
+  - `A3.md` Contains A2 retrospective, final overview of features
+  - `AC-storyboard.svg` Acceptance criteria storyboard
+  - `demo.gif` OAuth sign in demo
+  - `flow.svg` OAuth flow chart
+  - `minutes.md` Meeting minutes
+- `sample-frontend` Sample frontend client
+  - `scripts`
+    - `validate.js` Sends a token validation request to the server
   - `index.html` Client's home page
   - `dashboard.html` Mock dashboard that is shown once the client is successfully authenticated
-- `server` Auth server
+- `server` Auth app
+  - `test` Contains automated tests for the backend
   - `frontend` Contains the static frontend files that are served by the auth server
     - `login.html` Login page
     - `success.html` Page is displayed after successful authentication
   - `app.js` Express.js app entry point
+  - `tokens.js` Token generator
+  - `tokens.txt` Storage for generated tokens
   - `README.md` Contains more detailed information regarding the auth server, including documentation for the REST endpoints and installation instructions

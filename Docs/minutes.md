@@ -1,5 +1,45 @@
 # The Dissidents - Meeting Minutes
 
+## Assignment 3
+
+Friday, December 3, 2021 3:00pm ET
+- Brief final check in before A3 submission
+- Revised and proofread write-up
+- Cleaned up repository, finished READMEs
+
+Wednesday, December 1, 2021 7:00pm ET
+- Check in for A3 progress
+- A2 retro write-up complete
+- Jonathan will complete token storage and tests for the product
+- David to complete write-ups as well
+- Will check in again on Friday before deadline
+- Presentation preferences for Monday
+- Working on slides and will prepare as a team early Monday
+- Nancy to add meeting notes in repo
+
+Thursday, November 18, 2021 12:20pm ET
+- Last TA meeting of the year
+
+Monday, November 22, 2021 9:00pm ET
+- Discussed A3 writeup including A2 retrospective
+- To do:
+  - Connecting frontend and backend (David, Nancy)
+  - Storage for adding and validating tokens (Jonathan)
+  - Unit testing with mocha 
+  - Retrospective (nancy)
+  - Presentation slides and notes for 10 minutes
+- Goal: Aim to get most coding tasks done by **Nov 29** (excluding auto-testing)
+
+Thursday, November 18, 2021 12:20pm ET
+- Brief check-in with TA
+- Went over A3 requirements, realized that we will need automated unit tests for the final submission (this was a surprise but not a huge deal)
+- Briefly discussed unit testing, decided to implement unit tests which verify the functionality of the main endpoints in the authentication app
+
+Tuesday, November 9, 2021 7:00pm ET
+- Group decision to skip the weekly meeting in favour of a check in on Discord, seeing as there are no immediate action items until we get feedback from A2 submission
+- We will continue working on our assigned tasks individually until our weekly meeting next Tuesday
+
+
 ## Assignment 2
 
 Thursday, November 4, 2021 12:20pm ET
