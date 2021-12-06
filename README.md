@@ -32,6 +32,7 @@ Auth server is deployed at [https://oauth-server.lib.by/](https://oauth-server.l
   - `demo.gif` OAuth sign in demo
   - `flow.svg` OAuth flow chart
   - `minutes.md` Meeting minutes
+  - `Presentation.pdf` Our presentation slides in PDF format
 - `sample-frontend` Sample frontend client
   - `scripts`
     - `validate.js` Sends a token validation request to the server
